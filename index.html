@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="탑텐의 반응형 웹페이지 입니다.">
+  <meta name="date" content="2025-02-19T10:45:30+09:00">
+  <meta name="author" content="(주)신성통상">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Subject" content="어패럴, 패션">
+  <title>반응형웹-탑텐</title>
+  <link rel="shortcut icon" href="./images/image_55.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+  <!-- 1. PC 해상도 영역일 경우 변경되는 서식 -->
+  <!-- <link rel="stylesheet" href="./css/pc.css" type="text/css"> -->
+  <!-- 2. tablet해상도 영역일 경우 변경되는 서식 -->
+  <link rel="stylesheet" href="./css/tablet.css" type="text/css">
+  <!-- 3. mobile해상도 영역일 경우 변경되는 서식 -->
+  <link rel="stylesheet" href="./css/mobile.css" type="text/css">
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- flexslider 서식 -->
+  <link rel="stylesheet" href="./css/flexslider.css" type="text/css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="./script/jquery.flexslider.js"></script>
+
+</head>
+<body>
+  <input type="checkbox" id="toggle">
+  <header>
+    <div class="header_inner">
+      <h1><a href="index.html" title="메인페이지로 바로가기"><img src="./images/site-brand-topten__black.png" alt="탑텐로고"></a></h1>
+
+      <nav class="lnb">
+        <ul>
+          <li><a href="index.html" title="홈으로">home</a></li>
+          <li><a href="event.html" title="이벤트">event</a></li>
+          <li><a href="join.html" title="회원가입">join</a></li>
+          <li><a href="login.html" title="로그인">login</a></li>
+          <li><a href="admin.html" title="관리자">admin</a></li>
+          <li>
+            <input type="search" id="sh" placeholder="검색어 입력">
+            <label for="sh"><i class="fas fa-search"></i></label>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 모바일, 태블릿에서 보여주기 위한 메뉴, 버튼 -->
+      <label for="toggle" id="t_btn"><i class="fas fa-bars"></i></label>
+      <i class="fas fa-search m_search"></i>
+    </div>
+
+    <nav class="gnb">
+      <label for="toggle" id="c_btn"><i class="fas fa-times"></i></label>
+      <ul>
+        <li>
+          <a href="#" title="여성">여성<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="#" title="티셔츠">티셔츠</a></li>
+            <li><a href="#" title="니트/스웨터">니트/스웨터</a></li>
+            <li><a href="#" title="블라우스/셔츠">블라우스/셔츠</a></li>
+            <li><a href="#" title="스커트">스커트</a></li>
+            <li><a href="#" title="팬츠">팬츠</a></li>
+            <li><a href="#" title="데님">데님</a></li>
+            <li><a href="#" title="아우터">아우터</a></li>
+            <li><a href="#" title="원피스">원피스</a></li>
+            <li><a href="#" title="라운지/언더웨어">라운지/언더웨어</a></li>
+            <li><a href="#" title="쿨에어">쿨에어</a></li>
+            <li><a href="#" title="패션잡화">패션잡화</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" title="남성">남성<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="#" title="티셔츠">티셔츠</a></li>
+            <li><a href="#" title="니트/스웨터">니트/스웨터</a></li>
+            <li><a href="#" title="가디건">가디건</a></li>
+            <li><a href="#" title="셔츠">셔츠</a></li>
+            <li><a href="#" title="아우터">아우터</a></li>
+            <li><a href="#" title="재킷/베스트">재킷/베스트</a></li>
+            <li><a href="#" title="팬츠">팬츠</a></li>
+            <li><a href="#" title="데님">데님</a></li>
+            <li><a href="#" title="라운지/언더웨어">라운지/언더웨어</a></li>
+            <li><a href="#" title="쿨에어">쿨에어</a></li>
+            <li><a href="#" title="패션잡화">패션잡화</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" title="키즈">키즈<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="#" title="여아">여아</a></li>
+            <li><a href="#" title="남아">남아</a></li>
+            <li><a href="#" title="베이비">베이비</a></li>
+            <li><a href="#" title="패션잡화">패션잡화</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" title="잡화">잡화<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="#" title="여성가방">여성가방</a></li>
+            <li><a href="#" title="여성패션잡화">여성패션잡화</a></li>
+            <li><a href="#" title="남성가방">남성가방</a></li>
+            <li><a href="#" title="남성패션잡화">남성패션잡화</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" title="아울렛">아울렛<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="#" title="여성">여성</a></li>
+            <li><a href="#" title="남성">남성</a></li>
+            <li><a href="#" title="키즈">키즈</a></li>
+            <li><a href="#" title="잡화">잡화</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" title="매거진">매거진<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="#" title="전체">전체</a></li>
+            <li><a href="#" title="캠페인">캠페인</a></li>
+            <li><a href="#" title="매장소식">매장소식</a></li>
+            <li><a href="#" title="스토리">스토리</a></li>
+            <li><a href="#" title="뉴스">뉴스</a></li>
+            <li><a href="#" title="룩북">룩북</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="slide">
+      <h2>메인슬라이드</h2>
+      <div class="flexslider">
+        <ul class="slides">
+          <li><img src="./images/main01.jpg" alt="메인이미지1"></li>
+          <li><img src="./images/main02.jpg" alt="메인이미지2"></li>
+          <li><img src="./images/main03.jpg" alt="메인이미지3"></li>
+          <li><img src="./images/main04.jpg" alt="메인이미지4"></li>
+          <li><img src="./images/main05.jpg" alt="메인이미지5"></li>
+        </ul>
+      </div>
+    </article>
+    <section class="con">
+      <h2>메인콘텐츠 영역</h2>
+      <article class="banner">
+        <h3>배너</h3>
+        <a href="#" title="신상 아이템">
+          <img src="./images/mbn01.jpg" alt="신상 아이템템">
+          <dl>
+            <dt>탑텐키즈 봄 아울렛</dt>
+            <dd>따스한 봄, 산뜻한 가격</dd>
+          </dl>
+        </a>
+      </article>
+      <article class="story">
+        <h3>프랜차이즈&amp;브랜드스토리</h3>
+        <a href="#" title="브랜드스토리" class="bs">
+          <img src="./images/mbn0202.png" alt="브랜드스토리" id="bs">          
+        </a>
+        <a href="#" title="프랜차이즈" class="fran">
+          <img src="./images/mbn0201.png" alt="프랜차이즈">
+        </a>
+      </article>
+      <article class="ad">
+        <h3>TV광고</h3>
+        <a href="#" title="티셔츠">
+          <img src="./images/mbn03.jpg" alt="티셔츠">
+          <dl>
+            <dt>한장으로 끝</dt>
+            <dd>손쉬운 코디의 완성</dd>
+          </dl>
+        </a>
+      </article>
+      <article class="notice">
+        <h3>Notice <i class="fas fa-plus"></i></h3>
+        <ul>
+          <li><a href="#" title="내용">[팸데이 커밍순] 굿웨어몰 7주년 생일파티 준비</a></li>
+          <li><a href="#" title="내용">[탑텐 앱 혜택을 한눈에] App으로 더 쉽고 편리하게!</a></li>
+          <li><a href="#" title="내용">[탑텐 리뷰 작성하고 포인트 받자!] #탑리뷰 최대 3만 포인트 지급 EVENT</a></li>
+          <li><a href="#" title="내용">[생활에 탑텐을 더하다] TOPTEN10 서비스</a></li>
+        </ul>
+
+      </article>
+      <article class="store">
+        <h3>Store</h3>
+        <a href="#" title="Store">
+          <img src="./images/mbn04.png" alt="Store" id="store_img">
+        </a>
+      </article>
+      <article class="news">
+        <h3>News<i class="fas fa-plus"></i></h3>
+        <ul>
+          <li><a href="#" title="내용">[매일경제] “1만원대 청바지가 진짜 있네”…이젠 초가성비로 승부 보는 SPA브랜드</a></li>
+          <li><a href="#" title="내용">[어패럴뉴스] 탑텐키즈, 광복 80주년 기념 캠페인 전개</a></li>
+          <li><a href="#" title="내용">[뉴스1] 탑텐, 강동여성인력개발센터와 여성 고용 활성화 위해 맞손</a></li>
+          <li><a href="#" title="내용">[데일리한국] 에이스침대, 탑텐 키즈와 숙면 캠페인 전개</a></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="f_lnb">
+      <ul>
+        <li><a href="#" title="회사소개">회사소개</a></li>
+        <li><a href="#" title="이용약관">이용약관</a></li>
+        <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+        <li><a href="#" title="단체주문문의">단체주문문의</a></li>
+        <li><a href="#" title="입점/광고제휴문의">입점/광고제휴문의</a></li>
+        <li><a href="#" title="채용안내">채용안내</a></li>
+      </ul>
+    </nav>
+    <nav class="sns">
+      <ul>
+        <li><a href="#" title="카카오스토리"><img src="./images/foot_sns01.png" alt="카카오스토리 이미지"></a></li>
+        <li><a href="#" title="페이스북"><img src="./images/foot_sns02.png" alt="페이스북 이미지"></a></li>
+        <li><a href="#" title="트위터"><img src="./images/foot_sns03.png" alt="트위터 이미지"></a></li>
+        <li><a href="#" title="인스타그램"><img src="./images/foot_sns04.png" alt="인스타그램 이미지"></a></li>
+        <li><a href="#" title="블로그"><img src="./images/foot_sns05.png" alt="블로그 이미지"></a></li>
+      </ul>
+    </nav>
+    <address>
+      <p><img src="./images/site-brand__dimmed.png" alt="굿웨어몰 로고">신성통상(주)</p>
+      <p>대표자 염태순 | 서울 강동구 풍성로63길 84 신성빌딩</p>
+      <p>사업자등록번호 104-81-01106 &copy;2025 goodwearmall.com ALL RIGHTS RESERVED</p>
+    </address>
+  </footer>
+
+
+  <script>
+    // checkWidth();
+    // window.addEventListener("resize", checkWidth);
+
+    // function checkWidth() {
+    //   const menuItems = document.querySelectorAll(".gnb > ul > li > a");
+    //   if (window.innerWidth <= 767) {
+    //     // console.log(window.innerWidth);
+    //     document.querySelector(".lnb").style.right="0px";
+    //     document.querySelector(".lnb").style.top="400px";
+    //     menuItems.forEach(item => {
+    //       document.querySelectorAll(".sub").forEach(sub => {
+    //         sub.style.display = "none";
+    //       });
+    //       item.addEventListener("click", function (event) {
+    //         event.preventDefault(); // 기본 링크 기능 방지
+              
+    //           // 현재 클릭된 메뉴의 부모(li)를 가져옴
+    //         const parentLi = this.parentElement;
+    //         const subMenu = parentLi.querySelector(".sub");
+    //         const icon = this.querySelector("i");
+            
+    //         if (subMenu) {
+    //           if (subMenu.style.display === "block") {
+    //             // 서브메뉴가 열려있는 경우 닫기
+    //             subMenu.style.display = "none";
+    //             subMenu.style.maxHeight = null;
+    //             document.querySelector(".lnb").style.top = "400px";
+    //             if (icon) icon.style.transform = 'rotate(0deg)';
+    //           } else {
+    //             // 모든 서브메뉴 닫기
+    //             document.querySelectorAll(".sub").forEach(sub => {
+    //               sub.style.display = "none";
+    //               sub.style.maxHeight = null;
+    //               document.querySelector(".lnb").style.top = "400px";
+    //             });
+    //             document.querySelectorAll(".gnb > ul > li > a i").forEach(i => {
+    //               i.style.transform = 'rotate(0deg)';
+    //             });
+
+    //             // 서브메뉴 열기
+    //             subMenu.style.display = "block";
+    //             subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+    //             document.querySelector(".lnb").style.top = 400 + subMenu.scrollHeight + "px";
+    //             if (icon) icon.style.transform = 'rotate(-180deg) translateY(-10px)';
+    //           }
+    //         }
+    //       });
+    //     });
+    //   }else{
+    //     menuItems.forEach(item => {
+    //       document.querySelectorAll(".sub").forEach(sub => {
+    //         sub.style.display = "block";
+    //       });
+    //     });
+    //     document.querySelector(".lnb").style.right="10px";
+    //     document.querySelector(".lnb").style.top="14px";
+    //   }
+    // }
+
+  document.addEventListener("DOMContentLoaded", () => {
+  checkWidth();
+  window.addEventListener("resize", checkWidth);
+});
+
+function checkWidth() {
+  const menuItems = document.querySelectorAll(".gnb > ul > li > a");
+  const subMenus = document.querySelectorAll(".sub");
+  const lnb = document.querySelector(".lnb");
+
+  if (window.innerWidth <= 767) {
+    lnb.style.right = "0px";
+    lnb.style.top = "400px";
+
+    // Close all submenus initially
+    subMenus.forEach(sub => (sub.style.display = "none"));
+
+    menuItems.forEach(item => {
+      item.removeEventListener("click", toggleSubMenu); // Prevent duplicate listeners
+      item.addEventListener("click", toggleSubMenu);
+    });
+  } else {
+    // Desktop: Show all submenus
+    subMenus.forEach(sub => (sub.style.display = "block"));
+    lnb.style.right = "10px";
+    lnb.style.top = "14px";
+  }
+}
+
+function toggleSubMenu(event) {
+  event.preventDefault();
+
+  const parentLi = this.parentElement;
+  const subMenu = parentLi.querySelector(".sub");
+  const icon = this.querySelector("i");
+
+  if (!subMenu) return;
+
+  const lnb = document.querySelector(".lnb");
+  const allIcons = document.querySelectorAll(".gnb > ul > li > a i");
+
+  if (subMenu.style.display === "block") {
+    subMenu.style.display = "none";
+    subMenu.style.maxHeight = null;
+    lnb.style.top = "400px";
+    if (icon) icon.style.transform = "rotate(0deg)";
+  } else {
+    // Close all submenus first
+    document.querySelectorAll(".sub").forEach(sub => {
+      sub.style.display = "none";
+      sub.style.maxHeight = null;
+    });
+    
+    allIcons.forEach(i => (i.style.transform = "rotate(0deg)"));
+
+    // Open current submenu
+    subMenu.style.display = "block";
+    subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+    lnb.style.top = 400 + subMenu.scrollHeight + "px";
+    if (icon) icon.style.transform = "rotate(-180deg) translateY(-10px)";
+  }
+}
+
+
+
+    // html문서 로딩이 끝나면 슬라이드 동작
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    });
+
+    // 마우스 오버 시 그림 변경
+    // const brand_img = document.getElementById('bs');
+
+    // brand_img.addEventListener('mouseover', function(){
+    //   this.src='./images/mbn0202ov.png';
+    // });
+    // brand_img.addEventListener('mouseout', function(){
+    //   this.src='./images/mbn0202.png';
+    // });
+
+    const store_img = document.getElementById('store_img');
+
+    store_img.addEventListener('mouseover', function(){
+      this.src='./images/mbn04ov.png';
+    });
+    store_img.addEventListener('mouseout', function(){
+      this.src='./images/mbn04.png';
+    });
+
+
+
+  </script>
+</body>
+</html>

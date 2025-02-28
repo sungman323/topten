@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+@media screen and (max-width:767px){
+
+  .header_inner, .gnb > ul, .f_lnb, .sns, address{
+    width:100%;
+  }
+
+  header{
+    position: relative;
+    width: 100%;
+  }
+  .header_inner{
+    height: 70px;
+    box-shadow: 0px 0px 3px #555;
+    background: #fff;
+  }
+
+  .header_inner > h1{
+    text-align: center;
+    transform: none;
+    width: 100%;
+  }
+  .header_inner > h1 > a > img{
+    width: 240px;
+    padding-top: 10px;
+  }
+
+  #t_btn, i.m_search{
+    display: block;
+    font-size: 2rem;
+    position: absolute;
+    top:21px;
+  }
+  #t_btn{
+    left:14px;
+  }
+  i.m_search{
+    right:14px;
+  }
+
+  .gnb{
+    position: fixed;
+    width: 100%; height: 100% !important;
+    background: rgba(0,0,0,.8);
+    left:-100%; top:0px;
+    z-index: 100;
+  }
+  .gnb > ul > li > a::after{
+    display: none;
+  }
+  .gnb > ul {
+    flex-direction: column;
+    padding-top:120px;
+    padding-left: 5%;
+  }
+  .gnb > ul > li{
+    width:90%;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+  }
+  .gnb > ul > li a{
+    color: #fff;
+    font-size: 1rem;
+  }
+  .gnb > ul > li > a:hover{
+    color: #fff;
+  }
+  .sub{text-indent: 10px; display: none;}
+
+  #sh{
+    position: fixed;
+    left: -100%; top:30px;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    z-index: 101;
+  }
+  label[for="sh"]{
+    position: fixed;
+    left: -100%; top:30px;
+    z-index: 101;
+    color:#fff;
+    transition: 0.5s;
+  }
+  #c_btn{
+    display: block;
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    right:14px; top:21px;
+  }
+
+  .gnb .fa-angle-down{
+    display: block;
+    color: #fff;
+    font-size: 1.4rem;
+    float: right;
+    padding-top: 10px;
+    transition: 0.3s;
+  }
+
+  .lnb{
+    position: fixed;
+    display: inline-block;
+    width:100%; left:-100%;
+    top:400px;
+    z-index: 101;
+    transition: 0.5s;
+  }
+  .lnb ul{
+    text-align: center;
+    display: block;
+  }
+  .lnb > ul > li{
+    display: inline-block;
+    width: 48%;
+    background: #555;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .lnb ul > li > a{
+    display: block;
+    line-height: 300%;
+    color: #fff;
+    border-right: none;
+  }
+
+  #toggle:checked + header .gnb{left:0px;}
+  #toggle:checked + header .lnb{left:0px;}
+  #toggle:checked + header #sh{left:50%;}
+  #toggle:checked + header label[for=sh]{left:75%;}
+  #toggle:checked + header .fa-times{left:0px;}
+
+  .f_lnb, address, .sns{
+    width: 100%;
+  }
+  .f_lnb > ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .sns{
+    padding: 10px 0px;
+  }
+  .sns > ul{
+    justify-content: center;
+  }
+  address{text-align: center;}
+}

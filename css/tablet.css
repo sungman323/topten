@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+@media screen and (min-width:768px) and (max-width:1024px){
+
+  .header_inner, .gnb > ul, .f_lnb, .sns, address{
+    width:100%;
+  }
+
+  .gnb > ul{
+    width: 94%;
+    margin-right: 3.8%;
+    transform: translateY(-5px);
+  }
+  .gnb > ul > li{
+    width: 100px;
+    margin: 0;
+    text-align: center;
+  }
+
+  #t_btn{
+    display: block;
+    position: absolute; right:10px; top:70px;
+    font-size: 2rem;
+  }
+
+  #toggle:checked + header > .gnb{
+    height: 440px;
+  }
+
+  .sns{
+    transform: translate(-10px, 10px);
+  }
+  address{padding-left: 1%;}
+}

@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+main{margin-bottom: 40px;}
+h2, h3{display: none;}
+.slide{
+  width: 100%;
+  background-color: #ff0;
+}
+.con{
+  width: 1200px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 10px;
+  box-sizing: border-box;
+}
+.banner{width:360px; position: relative;}
+.story{width:460px;}
+.ad{width:360px; position: relative;}
+
+.banner img, .story img, .ad img{width: 100%;}
+.story img:first-child{margin-bottom: 18px;}
+
+.banner dl, .ad dl{
+  display: block;
+  position: absolute;
+  bottom:60px; left: 20px;
+}
+.banner dt, .ad dt,.banner dd, .ad dd{
+  color: #fff;
+}
+.banner dt, .ad dt{
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.banner dd, .ad dd{
+  font-size: 1rem;
+}
+.banner img, .ad img{width:100%;}
+.banner a, .ad a{display: block;}
+
+
+.notice{width:360px;}
+.store{width:460px; text-align: center; transform: translateY(10px);}
+.news{width:360px;}
+
+.notice > h3, .news > h3{display: block;}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  main{
+    padding: 0px 1.2% 50px 1.2%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .con{
+    width: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    box-sizing: border-box;
+  }
+
+  .banner, .ad{
+    width:100%;
+    position: relative;
+  }
+
+  .ad{grid-area: 1/2/2/3;}
+  .story{
+    width: 100%;
+    grid-area: 2/1/3/3;
+  }
+  .story a{
+    width: 49.3%;
+  }
+  .bs{float: left;}
+  .fran{float: right;}
+  .story img{width: 100%;}
+  .notice{grid-area: 3/1/4/2;}
+  .news{grid-area: 3/2/4/3;}
+  .store{
+    grid-area: 4/1/5/3;
+    width:100%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  /* 모바일 해상도 서식 */
+  main{
+    padding: 0px 1.2% 50px 1.2%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  header{
+    height: 76px;
+  }
+  .flexslider{height: 400px ;}
+  .slides img{
+    height: 400px !important;
+    object-fit: cover;
+  }
+  .con{
+    width: 100%;
+    margin: 0px auto;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(6, auto);
+  }
+  .banner, .story, .ad, .notice, .store, .news{width:100%;}
+  .store img{width: 93%;}
+  .notice li, .news li{
+    width: 320px;
+    font-size: 0.95rem;
+  }
+}
+/* @media screen and (min-width:414px) {
+  .notice li, .news li{
+    width: 414px;
+  }
+} */
